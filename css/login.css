@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,p,td,input,select,option,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+    position:relative;
+    font-size:12px; 
+    font-family:SourceHan,"Microsoft YaHei",Arial, Helvetica,SimSun;
+    background-color:#f7f9f8;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+a:hover{
+    text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:none;
+}
+.warp{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.yg{
+    display: block;
+}
+
+.header{
+    background-color: #e0e0e0;
+}
+.header .warp{
+    height: 58px;
+    padding: 15px 0 5px 0;
+}
+.logo{
+    float: left;
+    position: relative;
+    width: 280px;
+    margin-right: 10px;
+}
+.logo p{
+    position: absolute;
+    left: 240px;
+    top: 6px;
+    width: 100px;
+    color: #008842;
+    font-size: 28px;
+}
+/*login部分*/
+.login{
+    padding: 30px 0px;
+    background-color: white;
+}
+.login-left{
+    float: left;
+}
+.login-right{
+    position: relative;
+    float: right;
+    width: 308px;
+    margin-right: 80px;
+    padding: 30px 20px 20px 20px;
+    background-color: #fff;
+    border: 1px solid #e3e6e0;
+}
+.login-right p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.login-right a{
+    color: #008841;
+}
+.login-right p{
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #878787;
+    position: relative;
+    overflow: hidden;
+}
+.login-right p input{
+    display: inline-block;
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    height: 38px;
+    vertical-align: middle;
+    padding-left: 54px;
+    width: 250px;
+    font-size: 14px;
+}
+/*.login-right p:nth-child(4) input{
+    width: 112px;
+}*/
+.login-right p:nth-child(5) input{
+    width: 15px;
+    height: 15px;
+}
+.login-right p:nth-child(5) a{
+    color: #c1c1c1;
+    margin-left: 155px;
+}
+
+.login-right p span{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 38px;
+    background: url(../img/login/bg_input.png) no-repeat 1px -122px;
+}
+.login-right p:nth-child(1) i{
+    float: right;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #878787;
+    position: absolute;
+    right: 20px;
+    overflow: hidden;
+}
+.login-right p:nth-child(3) span{
+  background: url(../img/login/bg_input.png) no-repeat 1px -182px;
+}
+.login-right p:nth-child(4) span{
+  background: url(../img/login/bg_input.png) no-repeat 1px -182px;
+}
+.aaa i{
+    display: inline-block;
+    width: 88px;
+    height: 20px;
+    margin-right: 10px;
+}
+.aaa .a1 i{
+    background: url(../img/login/bg_login.png) no-repeat -60px -200px;
+}
+.aaa .a2 i{
+    background: url(../img/login/bg_login.png) no-repeat -158px -200px;
+}
+.aaa .a3 i{
+    background: url(../img/login/bg_login.png) no-repeat -248px -200px;
+}
+/*footer部分*/
+.footer{
+    border-top: 1px solid #c1c1c1;
+}
+.footer .warp{
+    margin: 50px auto 0;
+}
+.ll{
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+    display: inline;
+}
+.ll p{
+    height: 23px;
+    line-height: 23px;
+    background: url(../img/register/footer_icon.png) no-repeat 0 0;
+    font-size: 16px;
+    text-indent: 40px;
+    color: #424443;
+}
+.ll2 p{
+    background: url(../img/register/footer_icon.png) no-repeat 0 -24px;
+}
+.ll3 p{
+    background: url(../img/register/footer_icon.png) no-repeat 0 -46px;
+}
+.ll4 p{
+    background: url(../img/register/footer_icon.png) no-repeat 0 -69px;
+}
+.ll5 p{
+    background: url(../img/register/footer_icon.png) no-repeat 0 -92px;
+}
+.ll ul{
+    border-left: 1px dashed #A8A8A8;
+    padding-left: 20px;
+    height: 110px;
+    margin: 15px 0 0 13px;
+}
+.ll ul a{
+    color: #575556;
+    line-height: 22px;
+}
+/*rexian部分*/
+.rexian{
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+/*copy部分*/
+.copy{
+    text-align: center;
+    color: #717171;
+    line-height: 22px;
+}
+.copy .p2 a{
+    color: #717171;
+}
+.copy .p3 a{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.copy .p3 a:nth-of-type(4){
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+.copy .p3 span{
+    display: inline-block;
+    color: #939393;
+    height: 20px;
+    line-height: 20px;
+}
+
