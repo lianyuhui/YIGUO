@@ -19,7 +19,7 @@
     <div class="header">
       <div class="warp">
         <div class="logo">
-           <a href=""><img src="img/register/logo.jpg"></a>
+           <a href="index.html"><img src="img/register/logo.jpg"></a>
            <p>注册</p>
         </div>
       </div>
@@ -87,7 +87,7 @@
         <div class="ll ll1">
           <p>新手指南</p>
           <ul>
-            <li><a href="">账户注册</a></li>
+            <li><a href="registersteps.html">账户注册</a></li>
             <li><a href="">购物流程</a></li>
             <li><a href="">订购方式</a></li>
             <li><a href="">悠币说明</a></li>
@@ -223,10 +223,11 @@ window.onload = function(){
                 let str = xhr.responseText;
                 console.log(str);
                 if(str=="0"){
+                  $("#usernameMessage1").innerHTML="注册失败，服务器出错！";
+                    
+                }else{
                     alert("恭喜您，注册成功！");
                     location.href="login.html";
-                }else{
-                  $("#usernameMessage1").innerHTML="注册失败，服务器出错！";
                 }
             }
         }

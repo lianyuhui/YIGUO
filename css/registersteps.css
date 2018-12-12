@@ -1,0 +1,79 @@
+.list .xyzc{
+	height: 38px;
+	position: absolute;
+	left: 256px;
+	top: 0;
+	width: 1020px;
+	border-bottom: 1px solid green;
+	/*border: 1px solid red;*/
+}
+.list .xyzc a{
+	display: inline-block;
+	width: 112px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 16px;
+}
+.list .xyzc a:hover{
+	color: green;
+}
+.crumbs .warp{
+	height: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.crumbs a{
+	margin: 0 10px;
+}
+
+.zhzc .zhzc-l{
+	float: left;
+	width: 180px;
+	margin-left: 3px;
+}
+.zhzc-l p{
+	width: 84px;
+	font-size: 15px;
+	color: #404040;
+	border-bottom: 1px solid #898989;
+	padding: 10px 0px;
+	font-weight: 900;
+}
+.zhzc-l ul li a{
+	display: inline-block;
+	padding-right: 10px;
+	color: #7a7a7a;
+	margin-top: 5px;
+	line-height: 22px;
+}
+.zhzc-l ul li a:hover{
+	background-color: #c7e2d4;
+}
+.zhzc-r{
+	float: right;
+    width: 1000px;
+    overflow: hidden;
+}
+.zhzc-r .p1{
+	font-size: 14px;
+    color: #404040;
+    border-bottom: solid 1px #898989;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.zhzc-r h4{
+	color: #008742;
+    font-size: 14px;
+    margin: 10px 0 15px;
+}
+.zhzc-r .words{
+	display: block;
+	color: #818985;
+    line-height: 22px;
+    padding-left: 15px;
+}
+.zhzc-r img{
+	display: block;
+	margin-bottom: 25px;
+}
+

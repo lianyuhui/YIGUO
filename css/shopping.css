@@ -1,0 +1,241 @@
+.header .step{
+	float: right;
+	padding-top: 20px;
+	margin-right: 40px;
+}
+.step ul{
+	display: block;
+}
+.step ul li{
+	position: relative;
+	float: left;
+}
+.step li b{
+
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+    background: url(../img/shopping/order-step.png) no-repeat 0 -44px;
+}
+.step li:nth-child(2) b{
+	background: url(../img/shopping/order-step.png) no-repeat -42px 0px;
+}
+.step li:nth-child(3) b{
+	background: url(../img/shopping/order-step.png) no-repeat -84px 0px;
+}
+.step li span{
+	position: absolute;
+    top: -20px;
+    /*right: 0;*/
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    right: -62px;
+    color: #333;
+}
+.step li:nth-child(1) span{
+	color: green;
+}
+.step li i {
+	width: 165px;
+    height: 6px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+/*shopping部分*/
+
+.shopping{
+	margin-top: 26px;
+}
+.shopping h2{
+	font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    border-bottom: 2px solid #05984d;
+    position: relative;
+    background: url(../img/shopping/bg_cart.png) no-repeat 0 0;
+}
+.shopping h2 p{
+	display: inline-block;
+	position: absolute;
+    left: 230px;
+    top: 4px;
+    font-size: 14px;
+   }
+.shopping h2 a{
+	position: absolute;
+    right: 0;
+    top: 0;
+    color: #008842;
+    text-indent: 0;
+    text-decoration: underline;
+    margin-right: 22px;
+    font-size: 14px;
+}
+.shtop {
+      display: block;
+      height: 32px;
+      line-height: 32px;
+      padding: 5px 2px;
+      background: #f3f3f3;
+      border: 1px solid #e9e9e9;
+      border-top: 0;
+      font-size: 12px;
+      color: #666;
+      position: relative;
+}
+.shtop #checkAll {
+  position: relative; 
+  margin-left: 10px;
+}
+.shtop span {
+  padding-bottom: 5px; 
+}
+.shtop .span1 {
+  position: absolute;
+  left: 266px; 
+}
+.shtop .span2 {
+  position: absolute;
+  left: 470px; 
+}
+.shtop .span3 {
+  position: absolute;
+  left: 670px; 
+}
+.shtop .span4 {
+  position: absolute;
+  left: 840px; 
+}
+.shtop .span5 {
+  position: absolute;
+  left: 1100px; 
+}
+.pro{
+	margin: 10px 0;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e1e1e1;
+}
+.pro p:nth-child(1){
+	float: left;
+	width: 50px;
+	height: 82px;
+	line-height: 82px;
+}
+.pro p:nth-child(1) .check{
+	display: inline-block;
+	margin-left: 10px;
+	line-height: 82px;
+	vertical-align: middle;
+}
+.pro .name{
+	margin-left: 20px;
+	position: absolute;
+	display: inline-block;
+	line-height: 41px;
+	float: left;
+	width: 240px;
+}
+.pro .pri{
+	position: absolute;
+	left: 533px;
+	display: inline-block;
+	line-height: 82px;
+	float: left;
+}
+.pro .shu{
+	position: absolute;
+	left: 733px;
+	display: inline-block;
+	line-height: 82px;
+}
+.pro .shu input{
+	display: inline-block;
+	font-size: 22px;
+	width: 50px;
+	height: 30px;
+}
+.pro .dan{
+	position: absolute;
+	left: 900px;
+	display: inline-block;
+	line-height: 82px;
+	color: red;
+}
+.pro .cao{
+	position: absolute;
+	left: 1170px;
+	display: inline-block;
+	line-height: 82px;
+}
+.pro .cao a{
+	display: block;
+	text-align: center;
+	line-height: 30px;
+}
+.pro img{
+
+	width: 82px;
+	height: 82px;
+}
+.sh2 {
+  position: relative;
+  height: 50px;
+  border: 1px solid #f0f0f0; 
+  border-left: none;
+  border-right: none;
+  padding-top: 10px;
+}
+.sh2 p{
+	display: inline-block;
+	margin-left: 60px
+}
+.sh2 .xuanzhong {
+  float: left;
+  line-height: 18px;
+  padding: 16px 0 16px 9px; 
+}
+.sh2 .xuanzhong a {
+  margin-left: 20px;
+}
+.sh2 .price-sum {
+  float: left;
+  position: absolute;
+  left: 740px;
+}
+.sh2 .price-sum p {
+  float: right;
+  line-height: 20px;
+  color: red;
+  font-size: 20px;
+}
+.sh2 .jie {
+  float: right;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+.sh2 .jie a {
+  margin-left: 60px;
+  display: block;
+  width: 100px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 18px;
+  background: red;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+.goodsid{
+  display: none;
+}

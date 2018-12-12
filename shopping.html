@@ -1,0 +1,274 @@
+<!--本--------------却
+    是              因
+    青              浊
+    灯              酒
+    不              留
+    归              凤
+    客              尘
+    ，--------------！ -->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>易果|购物车</title>
+<link rel="stylesheet" href="css/public.css">
+<link rel="stylesheet" type="text/css" href="css/shopping.css"/>
+<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+  <div class="yg">
+    <div class="nav">
+      <div class="warp">
+        <div class="wleft">
+          <div class="xinxi">
+            <div id="welcome">
+            欢迎您：<span id="idSpan"></span>
+            <input id="btn" type="button" value="注销" />
+            </div>
+            <div id="login">
+            <a href="login.html" class="tiao">请登录</a>
+            </div>
+          </div>
+          
+          <a href="#">配送至：</a>
+          <a href="#">银川市</a>
+        </div>
+        <ul class="wright">
+          <li><a class="dl" href="login.html">[登录]</a></li>
+          <li><a class="zc" href="register.html">[注册]</a></li>
+          <li><a href=""><i></i>我的易果<s></s></a>
+          </li>
+          <li><a class="sjyg" href="#"><i></i>手机易果<s></s></a></li>
+          <li><a href=""><i></i>储值卡</a></li>
+          <li><a href=""><i></i>礼品兑换券入口</a></li>
+          <ul class="conli">
+            <li><a href="">我的订单</a></li>
+            <li><a href="">我的优惠券</a></li>
+            <li><a href="">我的收藏</a></li>
+            <li><a href="">我的悠币</a></li>
+            <li><a href="">我的退换货</a></li>
+            <li><a href="">预存款查询</a></li>
+            <li><a href="">立即充值</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="con">
+            <div><img src="img/index/app.jpg"><span>扫一扫下载APP</span></div>
+            <div><img src="img/index/wx.jpg"><span>易果生鲜</span></div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="warp">
+        <div class="logo">
+           <a href="index.html"><img src="img/index/logo.jpg"></a>
+        </div>
+        <div class="step">
+          <ul>
+            <li class="on">
+              <b class="b1"></b>
+              <span>我的购物车</span>
+            </li>
+            <li>
+              <i></i>
+              <b class="b2"></b>
+              <span>填写订单信息</span>
+            </li>
+            <li>
+              <i></i>
+              <b class="b3"></b>
+              <span>成功提交订单</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="shopping">
+      <div class="warp">
+        <h2>
+          <p>配送至：<span>银川</span></p>
+          <a href="">继续购物>></a>
+        </h2>
+        <div class="shtop">
+            <input type="checkbox" id="checkAll">  全选
+            <span class="span1">商品</span>
+            <span class="span2">单价</span>
+            <span class="span3">数量</span>
+            <span class="span4">小计</span>
+            <span class="span5">操作</span>
+        </div>
+        <div class="zhuang">
+          <!-- <div class="pro">
+            <p><input type="checkbox" class="check"></p>
+              
+            <img class="imgs" src="img/details/fdj1-1.jpg" alt="">
+            <p class="name">Zespri佳沛新西兰绿奇异果12个115-135g/个</p>
+            <p class="goodsid"></p>
+            <p class="pri">￥<span>68.80</span></p>
+            <p class="shu"><input class="number" type="number" value="1"></p>
+            <p class="dan">￥<span class="jgs">68.80</span></p>
+            <p class="cao">
+              <a href="">移入收藏</a>
+              <a href="#" class="del">删除</a>
+            </p>
+        </div>
+        <div class="pro">
+            <p><input type="checkbox" class="check"></p>
+              
+            <img src="img/details/fdj2-2.jpg" alt="">
+            <p class="name">Zespri佳沛新西兰绿奇异果12个115-135g/个</p>
+            <p class="goodsid"></p>
+            <p class="pri">￥<span>68.80</span></p>
+            <p class="shu"><input class="number" type="number" value="1"></p>
+            <p class="dan">￥<span class="jgs">68.80</span></p>
+            <p class="cao">
+              <a href="">移入收藏</a>
+              <a href="#" class="del">删除</a>
+            </p>
+        </div> -->
+        </div>
+        
+        <div class="sh2">
+           <p><a id="overAll" href="">清空购物车</a></p>
+            <div class="price-sum">
+                总价:<p>￥<span id="total"></span></p>
+            </div>
+            <div class="jie">
+                <a href="#">去结算</a>
+            </div> 
+        </div>
+
+      </div>
+    </div>
+    <div class="footer">
+      <div class="warp">
+        <div class="ll ll1">
+          <p>新手指南</p>
+          <ul>
+            <li><a href="registersteps.html">账户注册</a></li>
+            <li><a href="">购物流程</a></li>
+            <li><a href="">订购方式</a></li>
+            <li><a href="">悠币说明</a></li>
+            <li><a href="">会员等级</a></li>
+          </ul>
+        </div>
+        <div class="ll ll2">
+          <p>付款方式</p>
+          <ul>
+            <li><a href="">支付方式/发票说明</a></li>
+            <li><a href="">重置说明/储值卡说明</a></li>
+            <li><a href="">优惠代码/礼品卡说明</a></li>
+            <li><a href="">卡券购买章程</a></li>
+          </ul>
+        </div>
+        <div class="ll ll3">
+          <p>配送方式</p>
+          <ul>
+            <li><a href="">配送运费</a></li>
+            <li><a href="">配送范围</a></li>
+            <li><a href="">配送时间</a></li>
+          </ul>
+        </div>
+        <div class="ll ll4">
+          <p>售后服务</p>
+          <ul>
+            <li><a href="">退换货政策</a></li>
+            <li><a href="">退换货流程</a></li>
+            <li><a href="">常见问题</a></li>
+            <li><a href="">急速退款</a></li>
+            <li><a href="">投诉与建议</a></li>
+          </ul>
+        </div>
+        <div class="ll ll5">
+          <p>关于我们</p>
+          <ul>
+            <li><a href="">公司介绍</a></li>
+            <li><a href="">联系我们</a></li>
+            <li><a href="">业务合作</a></li>
+            <li><a href="">诚信举报</a></li>
+            <li><a href="">人才招聘</a></li>
+            <li><a href="">友情链接</a></li>
+          </ul>
+        </div>
+        <div class="rexian">
+          <p>客服热线 400-000-7788 企业采购或团购，请转2号键咨询<span>周一至周日 9:00-21:00</span></p>
+        </div>
+        <div class="copy">
+          <p class="p1">所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+          <p class="p2">
+            <a href="">沪ICP备09008015号 </a>  Copyright © 2005-2018 
+            <a href="">上海易果电子商务有限公司</a>版权所有
+          </p>
+          <p class="p3">
+            <a href=""><img src="img/index/copy1.png"></a>
+            <a href=""><img src="img/index/copy2.png" width="38" height="47"></a>
+            <a href=""><img src="img/index/copy3.gif"></a>
+            <a href=""><img src="img/index/copy4.png"><span>沪公网安备 31010502000002号</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</body>
+</html>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script> 
+<script type="text/javascript" src="js/allCheck.js"></script>
+<script type="text/javascript" src="js/shopping.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+$(function(){
+
+    $("#checkAll").bindCheck($(".pro :checkbox"),$(""));
+    $("#xuanze").bindCheck($(".pro :checkbox"),$(""));
+    over();
+
+    //1、读取用户名
+  var username = getCookie("username");
+  //2、初始化界面
+  if(username!=null){
+      $("#idSpan").html(username);
+      $("#welcome").css({
+        display:"block"
+      });
+     $("#login").css({
+        display:"none"
+      });
+     $(".wright .dl").html("");
+     $(".wright .zc").html("");
+    }else{
+      $("#welcome").css({
+        display:"none"
+      });
+     $("#login").css({
+        display:"block"
+      });
+    }
+  
+  //3、注销
+  $("#btn").click(function(){
+    removeCookie("username");
+    $("#welcome").css({
+        display:"none"
+      });
+     $("#login").css({
+        display:"block"
+      });
+     $(".wright .dl").html("[登录]");
+     $(".wright .zc").html("[注册]");
+  })
+
+   $(".tiao").click(function(){
+    
+    location.href="index.html";
+  })
+})
+  
+
+</script> 

@@ -29,9 +29,9 @@ gulp.task("copy-js",function(){
 	gulp.src("js/**/*").pipe(gulp.dest("D:\\phpStudy\\WWW\\YIGUO\\js"));
 });
 
-//复制所有sass文件并转为css文件
+// 复制所有sass文件并转为css文件
 // gulp.task("sass",function(){
-// 	gulp.src("sass/**/*.scss").pipe(sass()).pipe(gulp.dest("D:\\phpStudy\\WWW\\YIGUO\\css"))
+// 	gulp.src("sass/*.scss").pipe(sass()).pipe(gulp.dest("D:\\phpStudy\\WWW\\YIGUO\\css"));
 // });
 // gulp.task("data",function(){
 // 	gulp.src(["xml/*.xml","json/*.json","!json/test.json"]).pipe(gulp.dest("D:\\phpStudy\\WWW\\YIGUO\\data"));

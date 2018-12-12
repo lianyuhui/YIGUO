@@ -19,7 +19,7 @@
     <div class="header">
       <div class="warp">
         <div class="logo">
-           <a href=""><img src="img/register/logo.jpg"></a>
+           <a href="index.html"><img src="img/register/logo.jpg"></a>
            <p>登录</p>
         </div>
       </div>
@@ -74,7 +74,7 @@
         <div class="ll ll1">
           <p>新手指南</p>
           <ul>
-            <li><a href="">账户注册</a></li>
+            <li><a href="registersteps.html">账户注册</a></li>
             <li><a href="">购物流程</a></li>
             <li><a href="">订购方式</a></li>
             <li><a href="">悠币说明</a></li>
@@ -157,7 +157,7 @@ function $(id){
                     if(xhr.responseText=="0"){
                         $("span1").style.display="block";
                     }else{
-                        addCookie("username",$("username").value,7);
+                        saveCookie("username",$("username").value,7);
                         location.href = "index.html";
                     }
                 }

@@ -189,5 +189,17 @@ $(function(){
         return false;
     });
 
+    //顶部固定header
+	$(".header-min").hide()//隐藏
+    $(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()>87){//当window的scrolltop距离大于1时
+                $(".header-min").fadeIn();
+            } else {
+                $(".header-min").fadeOut();
+            }
+        });
+    });
+
 
 })
