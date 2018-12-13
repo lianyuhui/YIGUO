@@ -1,0 +1,172 @@
+<!--本--------------却
+    是              因
+    青              浊
+    灯              酒
+    不              留
+    归              凤
+    客              尘
+    ，--------------！ -->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>易果|管理员登录</title>
+<link rel="stylesheet" type="text/css" href="css/login.css"/>
+</head>
+<body>
+  <div class="yg">
+    <div class="header">
+      <div class="warp">
+        <div class="logo">
+           <a href="index.html"><img src="img/register/logo.jpg"></a>
+           <p>管理员登录</p>
+        </div>
+      </div>
+    </div>
+    <div class="login">
+      <div class="warp">
+        <div class="login-left">
+          <a href=""><img src="img/login/login.jpg" alt=""></a>
+        </div>
+        <div class="login-right">
+          <p>欢迎登录</p>
+          <p>
+            <span>&nbsp; </span>
+            <input type="text" id="username">
+          </p>
+          <p>
+            <span> </span>
+            <input type="password" id="userpass">
+            <i id="span1" style="position:absolute;right:20px;top:10px;color:red;display: none;">用户名或者密码不正确</i>
+          </p>
+          <p>
+            <span> </span>
+            <input type="text">
+          </p>
+          <p>
+            <input type="checkbox" checked="check">自动登录
+            <a href="">忘记登录密码？</a>
+          </p>
+          <p>
+            <button type="submit" id="btn" alt="登录" style=" display: inline-block;
+              width: 316px;
+              height: 50px;
+              line-height: 50px;
+              right: 0;
+              text-align: center;
+              color: #fff;
+              background-color: #008842;
+              font-size: 18px;
+              cursor: pointer;">登录</button>
+          </p>
+          <p>第三方登录</p>
+          <div class="aaa">
+            <a href="" class="a1"><i></i> </a>
+            <a href="" class="a2"><i></i> </a>
+            <a href="" class="a3"><i></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="warp">
+        <div class="ll ll1">
+          <p>新手指南</p>
+          <ul>
+            <li><a href="registersteps.html">账户注册</a></li>
+            <li><a href="">购物流程</a></li>
+            <li><a href="">订购方式</a></li>
+            <li><a href="">悠币说明</a></li>
+            <li><a href="">会员等级</a></li>
+          </ul>
+        </div>
+        <div class="ll ll2">
+          <p>付款方式</p>
+          <ul>
+            <li><a href="">支付方式/发票说明</a></li>
+            <li><a href="">重置说明/储值卡说明</a></li>
+            <li><a href="">优惠代码/礼品卡说明</a></li>
+            <li><a href="">卡券购买章程</a></li>
+          </ul>
+        </div>
+        <div class="ll ll3">
+          <p>配送方式</p>
+          <ul>
+            <li><a href="">配送运费</a></li>
+            <li><a href="">配送范围</a></li>
+            <li><a href="">配送时间</a></li>
+          </ul>
+        </div>
+        <div class="ll ll4">
+          <p>售后服务</p>
+          <ul>
+            <li><a href="">退换货政策</a></li>
+            <li><a href="">退换货流程</a></li>
+            <li><a href="">常见问题</a></li>
+            <li><a href="">急速退款</a></li>
+            <li><a href="">投诉与建议</a></li>
+          </ul>
+        </div>
+        <div class="ll ll5">
+          <p>关于我们</p>
+          <ul>
+            <li><a href="">公司介绍</a></li>
+            <li><a href="">联系我们</a></li>
+            <li><a href="">业务合作</a></li>
+            <li><a href="">诚信举报</a></li>
+            <li><a href="">人才招聘</a></li>
+            <li><a href="">友情链接</a></li>
+          </ul>
+        </div>
+        <div class="rexian">
+          <p>客服热线 400-000-7788 企业采购或团购，请转2号键咨询<span>周一至周日 9:00-21:00</span></p>
+        </div>
+        <div class="copy">
+          <p class="p1">所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+          <p class="p2">
+            <a href="">沪ICP备09008015号 </a>  Copyright © 2005-2018 
+            <a href="">上海易果电子商务有限公司</a>版权所有
+          </p>
+          <p class="p3">
+            <a href=""><img src="img/register/copy1.png"></a>
+            <a href=""><img src="img/register/copy2.png" width="38" height="47"></a>
+            <a href=""><img src="img/register/copy3.gif"></a>
+            <a href=""><img src="img/register/copy4.png"><span>沪公网安备 31010502000002号</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+<script type="text/javascript" src="js/cookieTools.js" ></script>
+<script type="text/javascript">
+function $(id){
+        return document.getElementById(id);
+    }
+
+    window.onload = function(){
+        $("btn").onclick = function(){
+            let xhr = new XMLHttpRequest();
+            xhr.open("post","dengluCheck.php",true);
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState==4 && xhr.status==200){
+                    if(xhr.responseText=="0"){
+                        $("span1").style.display="block";
+                    }else{
+                        saveCookie("username",$("username").value,7);
+                        location.href = "index.html";
+                    }
+                }
+            }
+            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            let sendStr="username="+$("username").value+"&userpass="+$("userpass").value;
+            xhr.send(sendStr);
+        }
+    }
+
+
+</script> 

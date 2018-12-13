@@ -174,7 +174,7 @@ $(function(){
                             },
                             success:function(data){
                                 console.log("进去没");
-                                // location.href = "shopping.html";
+                                location.href = "shopping.html";
                             },
                         });
                     });
